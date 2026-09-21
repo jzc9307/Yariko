@@ -2,164 +2,170 @@
 
 # 🌸 Yariko
 
-### ✨ An Anime Game Discord Bot ✨
+### An Anime Game Discord Bot
 
-*A little bit of anime. A little bit of chaos. A lot of fun.*
-
-[![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.js.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-JavaScript-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
-[![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge\&logo=sqlite\&logoColor=white)](https://www.sqlite.org/)
+[![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.js.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 [![License](https://img.shields.io/badge/License-Unlicense-blue?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/jzc9307/Yariko?style=for-the-badge)](https://github.com/jzc9307/Yariko/stargazers)
 
 <br>
 
-[📖 Documentation](#-documentation) •
-[⚡ Installation](#-installation) •
-[🎮 Commands](#-commands) •
-[🛠️ Development](#️-development) •
-[🤝 Contributing](#-contributing)
+**🎴 Collect • 💰 Earn • 🛒 Shop • 🌸 Explore**
+
+<br>
+
+[Commands](#-commands) •
+[Installation](#-installation) •
+[Configuration](#-configuration) •
+[Development](#-development) •
+[Contributing](#-contributing)
 
 </div>
 
 ---
 
-## 🌸 About Yariko
+# 🌸 About
 
 **Yariko** is an anime-themed Discord game bot built with **Node.js** and **Discord.js**.
 
-The project is designed to bring anime-inspired character collecting and game mechanics directly into Discord, allowing users to interact with the bot without leaving their server.
+Yariko brings an anime game experience directly into Discord, featuring a character database, player profiles, inventory and economy systems, shops, events, daily rewards, voting, and more.
 
-Yariko stores persistent game information using SQLite and organizes its character data through the `Dex` directory.
+The project uses a local SQLite database for persistent data and stores character information in the `Dex` directory.
 
-> 💮 **Collect. Discover. Play. Repeat.**
-
----
-
-## ✨ Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎴 Anime Game
-
-Interact with an anime-focused game directly through Discord.
-
-* Character-based gameplay
-* Anime character database
-* Multiple character categories
-* Promotional character data
-* Discord interactions
-
-</td>
-<td width="50%">
-
-### 💾 Persistent Data
-
-Player information can be stored persistently using:
-
-* SQLite
-* `better-sqlite3`
-* `quick.db`
-
-Your game data doesn't have to disappear when the bot restarts.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-### ⚔️ Discord Integration
-
-Built around the Discord platform with:
-
-* Discord.js v14
-* Slash commands
-* Discord interactions
-* Embeds
-* Buttons / interactive components
-
-</td>
-<td>
-
-### 🌟 Character Database
-
-Yariko includes several data collections inside `Dex/`.
-
-* Anime characters
-* 1-star characters
-* 4-star characters
-* Genshin characters
-* Promotional characters
-
-</td>
-</tr>
-</table>
+> ✨ **Your anime adventure starts here.**
 
 ---
 
-# 📸 Screenshots & GIFs
+# ✨ Features
 
-> Replace the placeholders below with screenshots or GIFs from your actual bot.
+### 🎴 Anime Character System
 
-### 🎮 In-game
+Explore Yariko's collection of anime characters through the built-in Dex system.
+
+- Anime character database
+- Character categories
+- 1-star characters
+- 4-star characters
+- Genshin characters
+- Promotional characters
+
+### 💰 Economy
+
+Yariko includes an in-game economy system.
+
+- 💰 Balance
+- 🎁 Daily rewards
+- 🛒 Shop
+- 🛍️ Item purchasing
+- 🎒 Inventory
+
+### 🌲 Exploration
+
+Encounter and interact with characters through the game's exploration system.
+
+- 🌲 Wild encounters
+- 📖 Character Dex
+- 🎉 Events
+
+### 👤 Player System
+
+Each player can have their own game profile and persistent data.
+
+- Player profiles
+- Inventory
+- Balance
+- Game progression
+
+### 💬 Discord Integration
+
+Built specifically for Discord using Discord.js.
+
+- Slash commands
+- Discord interactions
+- Embeds
+- Buttons and interactive components
+- Persistent player data
+
+---
+
+# 📸 Screenshots
+
+> Screenshots and GIFs can be added here once you have some gameplay captures.
+
+### 🎮 Gameplay
 
 <p align="center">
-  <img src="assets/gameplay.gif" width="700">
+  <img src="assets/gameplay.gif" width="750" alt="Yariko gameplay">
 </p>
 
-### 🎴 Character Collection
+### 🎴 Character System
 
 <p align="center">
-  <img src="assets/collection.png" width="700">
+  <img src="assets/dex.png" width="750" alt="Yariko Dex">
 </p>
 
-### 🌸 Commands
+### 🛒 Shop & Economy
 
 <p align="center">
-  <img src="assets/commands.png" width="700">
+  <img src="assets/shop.png" width="750" alt="Yariko Shop">
 </p>
 
-### ✨ More Coming Soon
-
-Have a cool screenshot or GIF?
-
-Feel free to open a pull request and add it to the showcase.
+> **Don't have screenshots yet?**
+>
+> You can remove these sections temporarily and add them once you have gameplay screenshots.
 
 ---
 
 # 🎮 Commands
 
-Yariko uses Discord commands to interact with the game.
+Yariko uses Discord **slash commands**.
 
-> **Note:** The exact command list should be kept synchronized with the files inside `commands/`.
+There are currently **17 commands** in the `commands/` directory.
 
-| Command | Description                       |
-| :-----: | --------------------------------- |
-| `/help` | Display available Yariko commands |
-| `/ping` | Check the bot's response latency  |
-|  `/...` | More commands coming soon         |
+## 🌸 Player
 
-### Command Format
+| Command | Description |
+|:---:|---|
+| `/start` | Start your Yariko journey |
+| `/profile` | View your player profile |
+| `/balance` | View your current balance |
+| `/inventory` | View your inventory |
+| `/daily` | Claim your daily reward |
+| `/dex` | Access the character Dex |
+| `/wild` | Access the wild system |
+| `/event` | Access the event system |
 
-Arguments can be documented using:
+---
 
-|    Syntax    | Meaning              |
-| :----------: | -------------------- |
-| `<argument>` | Required argument    |
-| `[argument]` | Optional argument    |
-|    `@user`   | Discord user mention |
-|  `#channel`  | Discord channel      |
+## 💰 Economy & Items
 
-For example:
+| Command | Description |
+|:---:|---|
+| `/shop` | View the available shop |
+| `/buy` | Purchase items |
+| `/itemsadd` | Add items |
+| `/itemsdel` | Remove items |
 
-```text
-/help
-```
+---
 
-> 💡 **Tip:** Run `/help` inside Discord to see the commands available in your current version of Yariko.
+## 🔗 Community
+
+| Command | Description |
+|:---:|---|
+| `/vote` | Vote for Yariko |
+| `/invite` | Get an invite link for Yariko |
+| `/help` | View the available commands |
+
+---
+
+## 🛠️ Testing
+
+| Command | Description |
+|:---:|---|
+| `/test` | Testing and development command |
+
+> **Note:** Some commands may require specific permissions, arguments, or game conditions.
 
 ---
 
@@ -169,7 +175,22 @@ For example:
 Yariko/
 │
 ├── 📁 commands/
-│   └── Discord bot commands
+│   ├── balance.js
+│   ├── buy.js
+│   ├── daily.js
+│   ├── dex.js
+│   ├── event.js
+│   ├── help.js
+│   ├── inventory.js
+│   ├── invite.js
+│   ├── itemsadd.js
+│   ├── itemsdel.js
+│   ├── profile.js
+│   ├── shop.js
+│   ├── start.js
+│   ├── test.js
+│   ├── vote.js
+│   └── wild.js
 │
 ├── 📁 Dex/
 │   ├── Anime.json
@@ -180,15 +201,13 @@ Yariko/
 │
 ├── 📄 index.js
 ├── 📄 server.js
+├── 💾 kekw.sqlite
 ├── 📄 package.json
 ├── 📄 package-lock.json
 ├── 📄 replit.nix
-├── 💾 kekw.sqlite
 ├── 📄 LICENSE
 └── 📄 README.md
-```
-
-The repository currently contains separate `commands/` and `Dex/` directories, along with the main bot entry point, server, package configuration, SQLite database, and Replit configuration.
+````
 
 ---
 
@@ -196,72 +215,80 @@ The repository currently contains separate `commands/` and `Dex/` directories, a
 
 ## 📋 Requirements
 
-Before running Yariko, make sure you have:
+Before installing Yariko, make sure you have:
 
 * [Node.js](https://nodejs.org/) installed
+* [Git](https://git-scm.com/) installed
 * A Discord account
-* A Discord application/bot
-* A Discord bot token
-* Git installed
-
-Yariko currently uses Discord.js **v14.11.0** and Node.js packages including `better-sqlite3`, `quick.db`, `express`, and the Top.gg SDK.
+* A Discord application
+* A Discord bot
+* Your Discord bot token
 
 ---
 
-## 1️⃣ Clone the repository
+## 1. Clone the repository
 
 ```bash
 git clone https://github.com/jzc9307/Yariko.git
+```
+
+Enter the project directory:
+
+```bash
 cd Yariko
 ```
 
 ---
 
-## 2️⃣ Install dependencies
+## 2. Install dependencies
+
+Install the required npm packages:
 
 ```bash
 npm install
 ```
 
-This installs the dependencies defined in `package.json`.
+---
+
+## 3. Configure your Discord bot
+
+Create a Discord application through the:
+
+**Discord Developer Portal**
+
+Create a bot and obtain your bot token.
+
+Your bot will also need the appropriate permissions and intents required by the project.
 
 ---
 
-## 3️⃣ Configure your Discord bot
+# 🔐 Configuration
 
-Create a Discord application through the Discord Developer Portal.
+## Environment Variables
 
-You will need your:
+For security, sensitive information should be stored in environment variables instead of being written directly into the source code.
 
-```text
-Bot Token
-Client ID
-Guild ID
-```
-
-Keep your bot token **private**.
-
-Never upload it to GitHub.
-
-### Recommended configuration
-
-Use environment variables rather than placing secrets directly inside your source code.
-
-Example:
+Create a `.env` file:
 
 ```env
-DISCORD_TOKEN=your_bot_token_here
-CLIENT_ID=your_client_id_here
-GUILD_ID=your_guild_id_here
+DISCORD_TOKEN=your_discord_bot_token
 ```
 
-Then add `.env` to `.gitignore`:
+If additional credentials are required by your deployment, add them to the same file.
+
+### ⚠️ Important
+
+**Never commit your `.env` file to GitHub.**
+
+Add this to `.gitignore`:
 
 ```gitignore
 .env
+node_modules/
+*.sqlite
 ```
 
-> ⚠️ **Security:** If your Discord token is ever exposed, immediately regenerate it through the Discord Developer Portal.
+If a Discord or API token has already been exposed publicly, **revoke and regenerate it immediately**.
 
 ---
 
@@ -273,196 +300,193 @@ Start the bot with:
 node index.js
 ```
 
-If your project is configured with an npm start script, you can also use:
+If everything is configured correctly, Yariko should connect to Discord.
 
-```bash
-npm start
-```
-
-### Development
-
-For development, simply restart the bot after making changes:
-
-```bash
-node index.js
-```
-
-The current repository does not define a dedicated `start` or `dev` npm script, so `node index.js` is the reliable command based on the current `package.json`.
-
----
-
-# 🛠️ Developer Setup
-
-Want to modify Yariko?
-
-### 1. Fork the repository
-
-Click **Fork** on GitHub and clone your fork:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Yariko.git
-cd Yariko
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Create your development configuration
-
-Set your Discord credentials using environment variables or whatever configuration mechanism your local version of the bot expects.
-
-### 4. Start the bot
-
-```bash
-node index.js
-```
-
-### 5. Make your changes
-
-A typical workflow might look like:
+You can then use:
 
 ```text
-commands/
-   ↓
-Add / modify command
-   ↓
-Test locally
-   ↓
-Check Discord interaction
-   ↓
-Commit changes
-   ↓
-Open Pull Request
+/help
 ```
 
----
-
-# 🧩 Adding a Command
-
-Commands are located inside:
-
-```text
-commands/
-```
-
-A typical command should:
-
-1. Define the command name
-2. Define its description/options
-3. Handle the Discord interaction
-4. Return a useful response
-5. Handle errors gracefully
-
-Example structure:
-
-```js
-module.exports = {
-    data: {
-        name: 'example',
-        description: 'An example Yariko command'
-    },
-
-    async execute(interaction) {
-        await interaction.reply('🌸 Hello from Yariko!');
-    }
-};
-```
-
-> The exact command module format should follow the existing implementation in `commands/`.
-
----
-
-# 🎴 Character Data
-
-Yariko's character information is organized inside:
-
-```text
-Dex/
-```
-
-The repository currently includes data files for:
-
-```text
-Anime.json
-1-star.json
-4-star.json
-Genshin.json
-Promo.json
-```
-
-This makes it possible to expand Yariko's character database without putting all character information directly into the bot's main code.
-
-### Adding Characters
-
-When adding new characters:
-
-* Follow the existing JSON structure
-* Keep naming consistent
-* Validate JSON before committing
-* Avoid duplicate entries
-* Check that image URLs remain accessible
+inside Discord to see the available commands.
 
 ---
 
 # 💾 Database
 
-Yariko includes an SQLite database:
+Yariko uses SQLite for persistent data.
+
+The repository contains:
 
 ```text
 kekw.sqlite
 ```
 
-The project also depends on:
+The project also uses:
 
-```text
-better-sqlite3
-quick.db
-```
+* `better-sqlite3`
+* `quick.db`
 
-These packages provide persistent local storage for the bot.
+The database stores persistent information used by the bot.
 
 ### ⚠️ Database Backups
 
-If you're hosting your own instance, regularly back up:
+If you're hosting your own instance, make regular backups of your database.
 
 ```text
 kekw.sqlite
 ```
 
-Do not commit production player data to a public repository.
+Avoid committing production databases containing player data to a public repository.
+
+---
+
+# 🎴 Character Data
+
+Character data is stored inside the:
+
+```text
+Dex/
+```
+
+directory.
+
+Currently available datasets include:
+
+| File           | Purpose                    |
+| -------------- | -------------------------- |
+| `Anime.json`   | Anime character data       |
+| `1-star.json`  | 1-star character data      |
+| `4-star.json`  | 4-star character data      |
+| `Genshin.json` | Genshin character data     |
+| `Promo.json`   | Promotional character data |
+
+This structure allows the character database to be expanded without putting all character information directly into the bot's main code.
+
+---
+
+# 🛠️ Development
+
+Want to work on Yariko?
+
+Start by cloning the repository:
+
+```bash
+git clone https://github.com/jzc9307/Yariko.git
+cd Yariko
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create your local configuration and start the bot:
+
+```bash
+node index.js
+```
+
+---
+
+## 📁 Working With Commands
+
+Discord commands are located in:
+
+```text
+commands/
+```
+
+Each JavaScript file represents a command.
+
+For example:
+
+```text
+commands/
+├── balance.js
+├── buy.js
+├── daily.js
+├── dex.js
+├── event.js
+├── help.js
+├── inventory.js
+├── invite.js
+├── itemsadd.js
+├── itemsdel.js
+├── profile.js
+├── shop.js
+├── start.js
+├── test.js
+├── vote.js
+└── wild.js
+```
+
+The bot automatically loads the command files when it starts.
+
+---
+
+# 🎴 Working With the Dex
+
+Character data is stored separately from the commands.
+
+```text
+Dex/
+├── Anime.json
+├── 1-star.json
+├── 4-star.json
+├── Genshin.json
+└── Promo.json
+```
+
+When adding or modifying characters:
+
+* Follow the existing JSON structure
+* Keep character names consistent
+* Validate your JSON
+* Avoid duplicate entries
+* Check image URLs
+* Test the relevant commands before committing
 
 ---
 
 # 🌐 Server
 
-Yariko also contains:
+Yariko also includes an Express server:
 
 ```text
 server.js
 ```
 
-The project includes Express as a dependency, allowing a lightweight HTTP server to run alongside the Discord bot.
-
-This can be useful for hosting environments that expect an HTTP service.
+This provides an HTTP server alongside the Discord bot and can be useful for hosting environments that expect a web service.
 
 ---
 
-# 🔧 Tech Stack
+# 🧰 Tech Stack
 
-| Technology        | Purpose                     |
-| ----------------- | --------------------------- |
-| 🟨 **Node.js**    | Runtime                     |
-| 💬 **Discord.js** | Discord API / bot framework |
-| 💾 **SQLite**     | Persistent database         |
-| 🗃️ **QuickDB**   | Database abstraction        |
-| ⚡ **Express**     | HTTP server                 |
-| 📊 **Top.gg SDK** | Bot listing integration     |
-| 📦 **npm**        | Package management          |
+| Technology        | Purpose                          |
+| ----------------- | -------------------------------- |
+| 🟨 **Node.js**    | JavaScript runtime               |
+| 💬 **Discord.js** | Discord bot framework            |
+| 💾 **SQLite**     | Persistent data storage          |
+| 🗃️ **QuickDB**   | Database interface               |
+| ⚡ **Express**     | Web server                       |
+| 📦 **npm**        | Dependency management            |
+| 📊 **Top.gg SDK** | Bot listing / voting integration |
 
-The current `package.json` lists Discord.js 14.11.0, Express 4.18.2, QuickDB 9.0.8, better-sqlite3 7.6.2, and `@top-gg/sdk` 3.1.3 among its dependencies.
+---
+
+# 🧪 Testing
+
+The project contains a dedicated:
+
+```text
+/test
+```
+
+command for development/testing purposes.
+
+When developing new features, test changes locally before pushing them to the main repository.
 
 ---
 
@@ -470,59 +494,102 @@ The current `package.json` lists Discord.js 14.11.0, Express 4.18.2, QuickDB 9.0
 
 Contributions are welcome! 🌸
 
-### Contribution workflow
+## Getting Started
+
+Fork the repository and clone your fork:
 
 ```bash
-# Fork the project first
-
 git clone https://github.com/YOUR_USERNAME/Yariko.git
-
 cd Yariko
-
-npm install
-
-git checkout -b feature/my-new-feature
 ```
 
-Make your changes, test them, then:
+Create a new branch:
+
+```bash
+git checkout -b feature/my-feature
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Make your changes and test them.
+
+Then commit:
 
 ```bash
 git add .
-git commit -m "feat: add my new feature"
-git push origin feature/my-new-feature
+git commit -m "feat: add my feature"
 ```
 
-Finally, open a **Pull Request**.
+Push your branch:
 
-### 💡 Good contribution ideas
+```bash
+git push origin feature/my-feature
+```
+
+Open a Pull Request on GitHub.
+
+---
+
+# 💡 Contribution Ideas
+
+There are many ways to contribute to Yariko:
+
+### 🎴 Game
 
 * Add new characters
-* Improve existing commands
+* Add new anime series
+* Improve the Dex
 * Add new game mechanics
+* Improve existing systems
+
+### 💰 Economy
+
+* Improve the shop
+* Add new items
+* Add additional rewards
+* Improve balancing
+
+### 💬 Discord
+
+* Add new slash commands
+* Improve embeds
+* Improve interactive menus
 * Improve error handling
-* Improve embeds/UI
-* Add documentation
-* Fix bugs
-* Improve database handling
+* Improve `/help`
+
+### 🛠️ Development
+
+* Improve code structure
 * Add tests
+* Improve documentation
+* Improve database handling
+* Improve security
 
 ---
 
 # 🐛 Bug Reports
 
-Found a bug?
+Found something broken?
 
-Please open a GitHub Issue and include:
+Open an issue on GitHub and include:
 
 ```text
 What happened?
+
 What did you expect to happen?
-How can we reproduce it?
-What version are you using?
-Any relevant error messages?
+
+How can the problem be reproduced?
+
+What command were you using?
+
+Were there any errors in the console?
 ```
 
-Screenshots and console errors are especially helpful.
+Screenshots and error logs are helpful when reporting bugs.
 
 ---
 
@@ -530,20 +597,34 @@ Screenshots and console errors are especially helpful.
 
 Have an idea for Yariko?
 
-Open an issue describing:
+Open a feature request and describe:
 
 * What you want to add
+* How the feature would work
 * Why it would be useful
-* How you imagine it working
 * Any examples or references
 
-Anime character suggestions are welcome too. 🌸
+Anime and character suggestions are welcome. 🌸
+
+---
+
+# 🔒 Security
+
+Please **do not** publish:
+
+* Discord bot tokens
+* API keys
+* Database credentials
+* Private configuration
+* User data
+
+If you discover a security vulnerability, avoid posting sensitive information publicly in an issue.
 
 ---
 
 # 📜 License
 
-Yariko is currently distributed under the **Unlicense**.
+Yariko is released under the **Unlicense**.
 
 See [`LICENSE`](LICENSE) for the complete license text.
 
@@ -551,9 +632,114 @@ See [`LICENSE`](LICENSE) for the complete license text.
 
 # 🌸 Roadmap
 
-> This section can be updated as development continues.
+The following roadmap can be updated as Yariko develops.
 
-### 🎴 Game
+### 🎴 Characters
 
-* [ ] Expand character database
-* [ ] Improve ch
+* [ ] Expand anime character database
+* [ ] Add more character categories
+* [ ] Expand promotional characters
+* [ ] Add more anime franchises
+
+### 🎮 Gameplay
+
+* [ ] Expand game mechanics
+* [ ] Improve character interactions
+* [ ] Expand events
+* [ ] Improve progression
+
+### 💰 Economy
+
+* [ ] Expand shop
+* [ ] Add more items
+* [ ] Improve economy balancing
+* [ ] Expand rewards
+
+### 🎨 Presentation
+
+* [ ] Add official Yariko banner
+* [ ] Add gameplay GIFs
+* [ ] Add command screenshots
+* [ ] Add character showcase
+
+### 🛠️ Development
+
+* [ ] Add automated testing
+* [ ] Improve developer documentation
+* [ ] Improve error handling
+* [ ] Improve configuration
+* [ ] Improve database management
+
+---
+
+# ⭐ Support
+
+If you enjoy **Yariko**, consider supporting the project!
+
+⭐ **Star the repository**
+
+🐛 **Report bugs**
+
+💡 **Suggest features**
+
+🤝 **Contribute**
+
+🎴 **Help expand the character database**
+
+Every contribution helps Yariko grow.
+
+---
+
+<div align="center">
+
+## 🌸 Thanks for checking out Yariko! 🌸
+
+**Made with ❤️ for anime fans.**
+
+<br>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Yariko-181717?style=for-the-badge\&logo=github)](https://github.com/jzc9307/Yariko)
+
+<br><br>
+
+**🎴 Collect • 💰 Earn • 🌸 Explore 🎴**
+
+</div>
+```
+
+### One change I'd strongly recommend
+
+Since your actual project has **`itemsadd.js` and `itemsdel.js`**, I would **not describe those as normal player commands** in the final README unless they're intentionally available to everyone. They sound like administrative/developer commands.
+
+So the command section could eventually be split into:
+
+**Player**
+
+```text
+/start
+/profile
+/balance
+/daily
+/dex
+/inventory
+/wild
+/event
+/shop
+/buy
+```
+
+**Community**
+
+```text
+/help
+/invite
+/vote
+```
+
+**Developer/Admin**
+
+```text
+/itemsadd
+/itemsdel
+/test
+```
